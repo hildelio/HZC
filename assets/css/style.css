@@ -1,0 +1,11 @@
+body {
+  background-color: #1D232A;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
