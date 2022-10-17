@@ -103,11 +103,17 @@ body {
 
 .main {
   padding: 24px 16px;
+  display: grid;
+  gap: 16px;
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.section-title {
+  font-size: 1.2rem;
 }
 
 .card {
@@ -117,10 +123,15 @@ body {
   background-color: #2c343a;
 }
 
+.card--emphasis {
+  margin-bottom: 16px;
+}
+
 .card-content {
   padding: 16px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
 }
 
 .card-emphasis {
@@ -164,6 +175,7 @@ body {
   height: 40px;
   border-radius: 10px;
   font-size: 0.9rem;
+  justify-self: flex-end;
 }
 
 .card-button-play::before {
@@ -179,3 +191,9 @@ body {
 .card-button-emphasis::before {
   margin-right: 8px;
 }
+
+.section {
+  display: grid;
+  gap: 16px;
+}
+
