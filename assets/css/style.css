@@ -9,6 +9,13 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1440px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +37,55 @@ body {
 
 .header-logo {
   width: 40px;
+}
+
+.header-profile {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    background-color: #1D232A;
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 1fr auto;
+    padding: 16px 60px;
+    height: 80px;
+    box-sizing: border-box;
+  }
+
+  .header-menu, .header-logo {
+    display: none;
+  }
+
+  .header-profile {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 8px;
+    align-items: center;
+    justify-self: flex-end;
+    color: #95999c;
+    padding: 8px 32px;
+    border-right: 1px solid #95999c;
+  }
+
+  .header-profile::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header-profile::after {
+    content: "\e90d";
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+  
 }
 
 .menu-aside {
@@ -99,6 +155,13 @@ body {
 
 .menu-aside-link-paintings::before {
   content: "\e90a";
+}
+
+@media screen and (min-width: 1440px) {
+  .menu-aside {
+    position: static;
+    width: 200px;
+  }
 }
 
 .main {
