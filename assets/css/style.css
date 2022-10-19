@@ -344,9 +344,7 @@ body {
   }
   .card-item-profile {
     font-size: 0.8rem;
-    color: #95999c;
-    grid-column: 2;
-    
+    color: #95999c;    
   }
 }
 
