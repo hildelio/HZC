@@ -1,3 +1,5 @@
+# Projeto feito através do curso CSS: DISPONDO ELEMENTOS COM FLEXBOX E GRID da Alura
+
 # Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
